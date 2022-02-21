@@ -34,6 +34,7 @@
 
       - O conteúdo do parágrafo data-js="converted-value" deve ser atualizado à
         cada mudança nos selects e/ou no input com data-js="currency-one-times";
+
       - Para que o valor contido no parágrafo do item acima não tenha mais de 
         dois dígitos após o ponto, você pode usar o método toFixed: 
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
@@ -68,6 +69,7 @@ input_Currencies.addEventListener('input', () => {
     ref_Coin_Select01 = item.value
     obj_Info = await conversions_Values(item.value)
     first_Select = obj_Info[item.value]
+    
     select_Two.forEach(async (item) => {
       ref_Coin_Select02 = item.value
       second_Select = obj_Info[item.value]
